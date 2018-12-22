@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="30sp"
+                android:text="FiberEye2"
+                android:layout_column="0"
+                android:layout_weight="3" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginLeft="10dip"
+                android:text="@string/APName"
+                android:textSize="@dimen/font_size"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/apName"
+                android:layout_column="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:textSize="@dimen/font_size" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginLeft="10dip"
+                android:text="@string/APID"
+                android:textSize="@dimen/font_size"
+                android:layout_column="0"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/apID"
+                android:layout_column="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:textSize="@dimen/font_size"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginLeft="10dip"
+                android:text="@string/APoldWP"
+                android:textSize="@dimen/font_size"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/apOldWp"
+                android:layout_column="1"
+                android:textSize="@dimen/font_size"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginLeft="10dip"
+                android:text="@string/APnewWP"
+                android:textSize="@dimen/font_size"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/apNewWP"
+                android:layout_column="1"
+                android:textSize="@dimen/font_size"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="200dip"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/APreset"
+                android:id="@+id/apReset"
+                android:layout_column="0"
+                android:layout_width="@dimen/setting_button_width"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:text="@string/APsave"
+                android:id="@+id/apSave"
+                android:layout_column="1"
+                android:layout_width="@dimen/setting_button_width"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/setting_button_width"
+                android:text="@string/APcancel"
+                android:id="@+id/apCancle"
+                android:layout_column="2"
+                android:visibility="gone" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

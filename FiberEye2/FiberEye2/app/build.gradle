@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.szetn.fibereye"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 4
+        versionName "1.8"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false   // 是否混淆
+//            shrinkResources true  // 是否去除无效的资源文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'  // 混淆的配置文件
+            debuggable false
+        }
+        debug {
+            debuggable true
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.2.0'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.wang.avi:library:2.1.3'
+    compile project(':openCVLibrary310')
+    //    compile 'com.github.lzyzsd:circleprogress:1.2.1'
+}

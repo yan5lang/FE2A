@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/video_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/icon_marging_top"
+        android:layout_marginLeft="@dimen/icon_marging_left_or_right"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/on"
+            android:textOff="@string/off"
+            android:id="@+id/on_off"
+            android:visibility="gone"
+            android:checked="false" />
+
+        <!--<Button
+            android:id="@+id/snapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snap" />
+
+        <ToggleButton
+            android:id="@+id/start_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record"
+            />-->
+
+        <ImageButton
+            android:id="@+id/snapButton"
+            android:layout_width="@dimen/video_icon_size"
+            android:layout_height="@dimen/video_icon_size"
+            android:background="@drawable/ic_switch_camera"   />
+
+        <ToggleButton
+            android:id="@+id/start_stop"
+            android:layout_marginTop="@dimen/icon_marging_top_buttons"
+            android:layout_width="@dimen/video_icon_size"
+            android:layout_height="@dimen/video_icon_size"
+            android:background="@drawable/ic_reocrd_toggle"
+            android:textOff=""
+            android:textOn=""  />
+
+        <TextView
+            android:id="@+id/recordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:visibility="gone"
+            android:textColor="#FF0000" />
+
+        <ToggleButton
+            android:layout_marginTop="@dimen/icon_marging_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="低电平"
+            android:textOff="高电平"
+            android:id="@+id/switch_gpio"
+            android:layout_marginBottom="89dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/thumbnailImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@id/video_frameLayout"
+        android:layout_marginTop="@dimen/icon_marging_top"
+        android:layout_marginRight="@dimen/icon_marging_left_or_right"
+        android:baselineAligned="false">
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="@dimen/video_icon_size"
+            android:layout_height="@dimen/video_icon_size"
+            android:id="@+id/toggleMenus"
+            android:background="@drawable/ic_menu_toggle"
+            android:textOff=""
+            android:textOn=""
+            android:duplicateParentState="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:background="@color/divider"
+        android:alpha = "0.8"
+        android:id="@+id/toggleMenusView"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="@dimen/menu_marging_left_and_right"
+        android:layout_marginRight="@dimen/menu_marging_left_and_right"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/icon_marging_top">
+            <TextView
+                android:text="@string/menu_item_calibrate"
+                android:textSize="@dimen/font_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/textView4"
+                android:layout_marginLeft="@dimen/text_marging_left" />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textView4"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/switch_calibrate"
+                android:textOn = "@string/switch_on"
+                android:textOff = "@string/switch_off"
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                android:layout_column="2"
+                android:paddingRight="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="@string/menu_item_brightness"
+                android:textSize="@dimen/font_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/textView2"
+                android:layout_marginLeft="@dimen/text_marging_left" />
+            <SeekBar
+                android:layout_width="@dimen/seebar_width_400px"
+                android:layout_height="wrap_content"
+                android:max="250"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="@dimen/height_100px"
+                android:layout_alignBottom="@+id/textView2"
+                android:id="@+id/action_brightness"
+                android:filterTouchesWhenObscured="false"
+                android:layout_marginLeft="@dimen/text_marging_left"
+                style="@android:style/Widget.Holo.Light.SeekBar" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch_bright_manual"
+                android:showText="true"
+                android:layout_marginBottom="15dp"
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                android:textOn = "@string/auto_off"
+                android:textOff = "@string/auto_on"
+                android:checked="true"
+                android:paddingRight="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:text="@string/menu_item_contrast"
+                android:textSize="@dimen/font_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/textView3"
+                android:layout_marginLeft="@dimen/text_marging_left" />
+            <SeekBar
+                android:layout_width="@dimen/seebar_width_400px"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:max="255"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/action_contrast"
+                android:layout_marginLeft="@dimen/text_marging_left"
+                style="@android:style/Widget.Holo.Light.SeekBar" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch_contrast_manual"
+                android:showText="true"
+                android:layout_marginBottom="15dp"
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                android:textOn = "@string/auto_off"
+                android:textOff = "@string/auto_on"
+                android:checked="true"
+                android:paddingRight="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="@string/menu_item_autoAnaly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/textView7"
+                android:layout_marginLeft="@dimen/text_marging_left" />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textView7"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/switch_autoAnaly"
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                android:layout_column="2"
+                android:paddingRight="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/circle_marging_left_and_right"
+        android:layout_marginRight="@dimen/circle_marging_left_and_right"
+        android:baselineAligned="false">
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/crosscircle"
+        android:fadeScrollbars="true"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/height_100px"
+        android:layout_marginRight="@dimen/height_100px" />
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScaleIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

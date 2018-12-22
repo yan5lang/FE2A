@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">FiberEye2</string>
+    <string name="menu_video">实时</string>
+    <string name="menu_pics">记录</string>
+    <string name="menu_circle">标尺</string>
+    <string name="menu_setting">设置</string>
+    <string name="on">打开</string>
+    <string name="off">连接WIFI</string>
+    <string name="snap">拍照</string>
+    <string name="record">录像</string>
+    <string name="language">中文</string>
+
+    <!-- info -->
+    <string name="info_choose_probe">请选择要连接的设备</string>
+    <string name="info_no_probe">无可用设备，请打开探头并重启程序</string>
+    <string name="info_open_first">请先打开视频</string>
+    <string name="info_connect_first">请打开设备并通过WIFI连接</string>
+    <string name="info_device_lose">已断开设备，连接失败</string>
+    <string name="info_device_connect">正在加载网络，请确保探头已打开</string>
+    <string name="info_stoped">已关闭视频</string>
+    <string name="info_save_suc">保存成功，正在重启设备</string>
+    <string name="info_save_fail">保存失败</string>
+    <string name="info_save_fail_reason1">请输入长度大于8位的密码</string>
+    <string name="info_save_fail_reason2">请输入不同于原密码的值</string>
+    <string name="info_open_authority">请打开权限并允许存储和麦克风选项</string>
+    <string name="rationale">此功能必须要该权限，请在设置界面勾选</string>
+    <string name="rationale_title">权限申请</string>
+
+    <!-- setting -->
+    <string name="APName">设备名: </string>
+    <string name="APID">设备ID: </string>
+    <string name="APoldWP">原密码: </string>
+    <string name="APnewWP">新密码: </string>
+    <string name="APreset">重置</string>
+    <string name="APsave">保存</string>
+    <string name="APcancel">取消</string>
+
+
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+    <!-- Content descriptions -->
+    <string name="descr_image">Image</string>
+    <string name="aboutVersion">版本</string>
+    <string name="aboutAbout">关于</string>
+    <string name="aboutInfo">信息</string>
+    <string name="setPass">设置密码</string>
+    <string name="menu_item_brightness">亮度</string>
+    <string name="menu_item_contrast">对比度</string>
+    <string name="menu_item_calibrate">标尺</string>
+    <string name="switch_on">开</string>
+    <string name="switch_off">关</string>
+    <string name="auto_on">自动</string>
+    <string name="auto_off">手动</string>
+    <string name="menu_item_autoAnaly">自动分析</string>
+
+    <!-- menu   -->
+    <string name="menu_add">增加</string>
+    <string name="menu_edit">修改</string>
+    <string name="menu_delete">删除</string>
+
+</resources>

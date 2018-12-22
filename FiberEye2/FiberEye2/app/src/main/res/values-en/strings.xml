@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">FiberEye2</string>
+    <string name="menu_video">Live</string>
+    <string name="menu_pics">Files</string>
+    <string name="menu_circle">Calibrate</string>
+    <string name="menu_setting">Setting</string>
+    <string name="on">Open</string>
+    <string name="off">Connect</string>
+    <string name="snap">Snap</string>
+    <string name="record">Video</string>
+    <string name="language">English</string>
+
+    <!-- info -->
+    <string name="info_choose_probe">Pelease choose the right device</string>
+    <string name="info_no_probe">No probe could be use, please open the probe and try restart APP</string>
+    <string name="info_open_first">Please open live video first.</string>
+    <string name="info_connect_first">Connect WIFI first.</string>
+    <string name="info_device_lose">The scope has been disconnected, connect fail.</string>
+    <string name="info_device_connect">The Wi-Fi chain was loading, please make sure the probe has worked.</string>
+    <string name="info_stoped">Live stream closed.</string>
+    <string name="info_save_suc">Save success, restarting the scope.</string>
+    <string name="info_save_fail">Save failed.</string>
+    <string name="info_save_fail_reason1">Input more than 8 char.</string>
+    <string name="info_save_fail_reason2">Input different password.</string>
+    <string name="info_open_authority">Please open the Permissions, and allow to use Microphone and Storage</string>
+    <string name="rationale">This function must be authorized, please select on the settings page</string>
+    <string name="rationale_title">Permission apply</string>
+
+    <!-- setting -->
+    <string name="APName">Scope Name: </string>
+    <string name="APID">Scope ID: </string>
+    <string name="APoldWP">Old Password: </string>
+    <string name="APnewWP">New Password: </string>
+    <string name="APreset">Reset</string>
+    <string name="APsave">Save</string>
+    <string name="APcancel">Cancel</string>
+
+
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+    <!-- Content descriptions -->
+    <string name="descr_image">Image</string>
+    <string name="aboutVersion">Version</string>
+    <string name="aboutAbout">About</string>
+    <string name="aboutInfo">Info</string>
+    <string name="setPass">Set password</string>
+    <string name="menu_item_brightness">Brightness</string>
+    <string name="menu_item_contrast">Contrast</string>
+    <string name="menu_item_calibrate">Calibrate</string>
+    <string name="switch_on">Y</string>
+    <string name="switch_off">N</string>
+    <string name="auto_on">A</string>
+    <string name="auto_off">M</string>
+    <string name="menu_item_autoAnaly">Auto analyse</string>
+
+    <!-- menu   -->
+    <string name="menu_add">Add</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+
+</resources>

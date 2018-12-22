@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="height_100px">50dp</dimen>
+    <dimen name="left_200px">100dp</dimen>
+    <dimen name="seebar_width_400px">300dp</dimen>
+    <dimen name="text_marging_left">5dp</dimen>
+    <dimen name="text_marging_top">5dp</dimen>
+
+    <dimen name="menu_marging_left_and_right">60dip</dimen>
+    <dimen name="circle_marging_left_and_right">50dip</dimen>
+    <dimen name="menusViewDistance">15dp</dimen>
+
+    <dimen name="video_icon_size">72px</dimen>
+    <dimen name="icon_marging_top">10dp</dimen>
+    <dimen name="icon_marging_top_buttons">15dp</dimen>
+    <dimen name="icon_marging_left_or_right">20dp</dimen>
+
+
+    <dimen name="file_item_image_height">36dp</dimen>
+    <dimen name="file_item_image_weight">48dp</dimen>
+
+    <dimen name="switch_icon_size">30dp</dimen>
+    <dimen name="font_size">22dp</dimen>
+    <dimen name="setting_area_top">20dp</dimen>
+    <dimen name="setting_button_width">60dp</dimen>
+
+
+</resources>
